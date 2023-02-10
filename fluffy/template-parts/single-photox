@@ -1,0 +1,394 @@
+
+					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+
+					<?php $setting_theme = get_field('setting_theme', 'option');
+            switch ($setting_theme) {
+              case 'one':
+              get_template_part( 'template-parts/post-meta-s2');
+              break;
+              case 'two':
+              get_template_part( 'template-parts/post-meta-s1');
+              break;
+              case 'three':
+              get_template_part( 'template-parts/post-meta-s1');
+                  break;
+              case 'four':
+              get_template_part( 'template-parts/post-meta-s2');
+              break;
+              case 'five':
+              get_template_part( 'template-parts/post-meta-s2');
+              break;
+              case 'six':
+              get_template_part( 'template-parts/post-meta-s2');
+              break;
+              case 'seven':
+              get_template_part( 'template-parts/post-meta-s2');
+              break;
+              case 'eight':
+              get_template_part( 'template-parts/post-meta-s1');
+              break;
+              case 'nine':
+              get_template_part( 'template-parts/post-meta-s1');
+              break;
+              case 'ten':
+              get_template_part( 'template-parts/post-meta-s1');
+              break;
+              case 'eleven':
+              get_template_part( 'template-parts/post-meta-s1');
+              break;
+              default:
+              get_template_part( 'template-parts/post-meta-s1');
+                break;
+            }
+            ?>
+
+					<?php if (has_post_thumbnail()): ?>
+						<div class="entry-featured-image">
+						<?php the_post_thumbnail(); ?>
+						</div>
+					<?php endif; ?>
+
+
+					<?php the_content(); ?>
+
+<?php if (get_field('video_post_embed')): ?>
+	<div class="video_embed_wrap">
+<?php echo get_field('video_post_embed'); ?>
+	</div>
+<?php endif; ?>
+
+		<?php
+			$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'large');
+			$video_1 = get_field('video_480p');
+			$video_2 = get_field('video_720p');
+			$video_3 = get_field('video_1080p');
+		 ?>
+
+		 	<?php if ($video_1 != '' || $video_2 != '' || $video_3 != ''): ?>
+
+			 <link  rel="stylesheet" href="<?php echo site_url(); ?>/wp-content/plugins/yp-plugin-core/include/css/plyr.css"/>
+			 <script src="<?php echo site_url(); ?>/wp-content/plugins/yp-plugin-core/include/js/plyr.js"></script>
+
+			 <script type="text/javascript">
+			 document.addEventListener('DOMContentLoaded', () => {
+				  // This is the bare minimum JavaScript. You can opt to pass no arguments to setup.
+				  const player = new Plyr('#player');
+				  // Expose
+				  window.player = player;
+				  // Bind event listener
+				  function on(selector, type, callback) {
+				    document.querySelector(selector).addEventListener(type, callback, false);
+				  }
+				});
+			 </script>
+
+		<div class="video_local_wrap">
+			<video controls crossorigin playsinline poster="<?php echo $featured_img_url; ?>" id="player" style="--plyr-color-main: #f9a50f;">
+				<?php if ($video_1['url']): ?>
+					<source src="<?php echo $video_1['url']; ?>" type="video/mp4" size="480">
+				<?php endif; ?>
+
+				<?php if ($video_2['url']): ?>
+					<source src="<?php echo $video_2['url']; ?>" type="video/mp4" size="720">
+				<?php endif; ?>
+
+				<?php if ($video_3['url']): ?>
+					<source src="<?php echo $video_3['url']; ?>" type="video/mp4" size="1080">
+				<?php endif; ?>
+
+			</video>
+				<a download target="_blank" href="<?php echo $video_2['url']; ?>" class="btn-video-download">
+					<?php yp_text('ดาวน์โหลด','Download'); ?> <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg>
+				</a>
+		</div>
+
+<?php endif; ?>
+
+
+
+	<div class="left-tags">
+		<?php
+				$tags_lists = wp_get_post_terms( get_the_ID(), $tags );
+			 if (!empty($tags_lists)) { ?>
+				<div class="tags_list">
+				<?php
+			 foreach($tags_lists as $tags_list) {
+				 ?>
+						<a href="<?php echo get_category_link( $tags_list->term_id ) ?>">
+								 <?php echo $tags_list->name; ?>
+						</a>
+			<?php  }  ?>
+			</div>
+		<?php	} 	?>
+	</div>
+	<div class="right-shared">
+		<?php echo do_shortcode('[seed_social]'); ?>
+	</div>
+	<div class="clearfix"></div>
+
+	<?php if (get_field('files_download') && get_field('files_download')[0]['file_download'] != '' ): ?>
+
+		<div class="file_url_list section-box-single">
+			<h3 class="section-title">
+				<div class="icon-title">
+					<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+				</div>
+				<?php
+				yp_text('ไฟล์เอกสารที่เกี่ยวข้อง:','File Attachment:');
+				 ?>
+			</h3>
+
+				<?php if( have_rows('files_download') ): ?>
+					<?php while( have_rows('files_download') ): the_row();?>
+							<?php
+							 $url_host = get_sub_field('file_download');
+							 $ext = pathinfo($url_host['url'], PATHINFO_EXTENSION);
+
+							 if ($ext == 'pdf') {
+									 $file_icon_type = get_stylesheet_directory_uri().'/img/pdf.svg';
+							 }
+
+							else if ($ext == 'xlsx') {
+									 $file_icon_type = get_stylesheet_directory_uri().'/img/xls.svg';
+							 }
+
+							 else if ($ext == 'xls') {
+									 $file_icon_type = get_stylesheet_directory_uri().'/img/xls.svg';
+							 }
+
+							 else if ($ext == 'doc') {
+									 $file_icon_type = get_stylesheet_directory_uri().'/img/doc.svg';
+							 }
+
+							else if ($ext == 'docx') {
+									 $file_icon_type = get_stylesheet_directory_uri().'/img/doc.svg';
+							 }
+
+							else if ($ext == 'ppt') {
+									 $file_icon_type = get_stylesheet_directory_uri().'/img/pptx.svg';
+							 }
+
+							else if ($ext == 'pptx') {
+									 $file_icon_type = get_stylesheet_directory_uri().'/img/pptx.svg';
+							 }
+							 else {
+										$file_icon_type = get_stylesheet_directory_uri().'/img/log.svg';
+								}
+								// print_r($url_host);
+							?>
+						<div class="wrap-all-list new">
+							<img style="margin-left: 5px" src="<?php echo $file_icon_type; ?>" alt="icon_type">
+								<div class="file_url_item">
+									<a target="_blank" href="<?php echo $url_host['url']; ?>"><?php echo get_sub_field('file_name'); ?></a>
+									<div class="file_url_sub">
+										<ul>
+											<li>
+												<?php yp_text('ขนาดไฟล์','File Size'); ?> : <span><?php echo number_format( $url_host['filesize']/1048576 ,2); ?> MB</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="file-btn">
+									<a target="_blank" href="<?php echo $url_host['url']; ?>" class="btn-file-download">
+										<?php if (get_locale() == 'th'): ?>
+												<?php echo "ดาวน์โหลด"; ?>
+											<?php else: ?>
+												<?php echo "Download"; ?>
+										<?php endif; ?>
+										<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg>
+									</a>
+								</div>
+								<div class="clearfix"></div>
+						</div>
+
+						<?php endwhile; ?>
+				<?php endif; ?>
+	 </div>
+	<?php endif; ?>
+
+	<?php
+					if (get_field('ebook_file')) {
+					echo do_shortcode('[dflip source="'.get_field('ebook_file')['url'].'"]');
+		?>
+		<div class="wrap-all-list ebook">
+			<div class="file-btn">
+				<a target="_blank" href="<?php echo get_field('ebook_file')['url']; ?>" class="btn-file-download">
+					<?php yp_text('ดาวน์โหลด','Download'); ?>
+				<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg>
+			</a>
+			</div>
+		</div>
+		<style media="screen">
+		 .entry-featured-image{
+			display: none;
+		}
+		.wrap-all-list.ebook .file-btn {
+				float: none;
+				margin: 17px auto 30px;
+				text-align: center;
+			}
+		</style>
+		<?php
+					}
+
+
+					$gallery = get_field('gallery_post');
+					 if( $gallery ): ?>
+					 <style media="screen">
+					 .wrap_yp_gallery {
+					     display: flex;
+					     flex-wrap: wrap;
+					     margin: 0 -5px;
+					 }
+					 .wrap_yp_gallery a.yp_gallery_item {
+							 width: calc(25% - 10px);
+							 float: left;
+							 display: none;
+							 margin: 5px;
+					 }
+					 .wrap_yp_gallery a.yp_gallery_item:nth-child(1) {
+						 display: block;
+					}
+					 .wrap_yp_gallery a.yp_gallery_item:nth-child(2) {
+							display: block;
+					 }
+					 .wrap_yp_gallery a.yp_gallery_item:nth-child(3) {
+						 display: block;
+					}
+					.wrap_yp_gallery a.yp_gallery_item:nth-child(4) {
+						 display: block;
+					}
+					.wrap_yp_gallery a.yp_gallery_item:nth-child(5) {
+						 display: block;
+					}
+
+					.wrap_yp_gallery a.yp_gallery_item .item-thumbs{
+						padding-bottom: calc( 0.68 * 100% );
+						position: relative;
+						transform-style: preserve-3d;
+						-webkit-transform-style: preserve-3d;
+						overflow: hidden;
+					}
+
+					.wrap_yp_gallery a.yp_gallery_item .item-thumbs img{
+					display: block;
+			    -webkit-transition: -webkit-filter .3s;
+			    transition: -webkit-filter .3s;
+			    -o-transition: filter .3s;
+			    transition: filter .3s;
+			    transition: filter .3s,-webkit-filter .3s;
+					height: 100%;
+					width: 100%;
+			    position: absolute;
+			    top: calc(50% + 1px);
+			    left: calc(50% + 1px);
+			    -webkit-transform: scale(1.01) translate(-50%,-50%);
+			    -ms-transform: scale(1.01) translate(-50%,-50%);
+			    transform: scale(1.01) translate(-50%,-50%);
+					object-fit: cover;
+					}
+
+					.wrap_yp_gallery .overlay_thumb {
+					    position: absolute;
+					    top: 0;
+					    left: 0;
+					    background: #0000008f;
+							color: #FFF;
+					    content: '';
+					    display: block;
+					    z-index: 123;
+					    width: 100%;
+					    height: 100%;
+					}
+					.wrap_yp_gallery .in-overlay{
+						top: 50%;
+					  left: 50%;
+					  transform: translate(-50%, -50%);
+						position: absolute;
+					}
+					.wrap_yp_gallery .in-overlay span {
+					    font-size: 28px;
+					}
+					.wrap_yp_gallery .in-overlay svg {
+					    margin-bottom: -0.25em;
+					    margin-right: 1px;
+					}
+					.fancybox__thumbs .carousel__slide .fancybox__thumb::after{
+						border-color: #f9aa2b!important;
+					}
+					 .wrap_yp_gallery a.yp_gallery_item:hover{
+						 opacity: 0.9;
+					 }
+					 .fancybox__container{
+						 z-index: 9999!important;
+					 }
+
+					 /*for tabletV*/
+					 @media (min-width: 768px) and (max-width: 991px) {
+						 .wrap_yp_gallery a.yp_gallery_item {
+							  margin-bottom: 10px;
+						 }
+					 }
+					 @media (max-width:767px) {
+						 .wrap_yp_gallery a.yp_gallery_item {
+							 width: calc(50% - 10px);
+							 margin-bottom: 10px;
+							 }
+					 }
+					 </style>
+
+					<link  rel="stylesheet" href="<?php echo site_url(); ?>/wp-content/plugins/yp-plugin-core/include/css/fancybox.css"/>
+					<script src="<?php echo site_url(); ?>/wp-content/plugins/yp-plugin-core/include/js/fancybox.min.js"></script>
+
+
+					<div class="gallery-single section-box-single">
+						<h3 class="section-title">
+							<div class="icon-title">
+								<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="images" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-images fa-w-18 fa-3x"><path fill="currentColor" d="M480 416v16c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V176c0-26.51 21.49-48 48-48h16v48H54a6 6 0 0 0-6 6v244a6 6 0 0 0 6 6h372a6 6 0 0 0 6-6v-10h48zm42-336H150a6 6 0 0 0-6 6v244a6 6 0 0 0 6 6h372a6 6 0 0 0 6-6V86a6 6 0 0 0-6-6zm6-48c26.51 0 48 21.49 48 48v256c0 26.51-21.49 48-48 48H144c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h384zM264 144c0 22.091-17.909 40-40 40s-40-17.909-40-40 17.909-40 40-40 40 17.909 40 40zm-72 96l39.515-39.515c4.686-4.686 12.284-4.686 16.971 0L288 240l103.515-103.515c4.686-4.686 12.284-4.686 16.971 0L480 208v80H192v-48z" class=""></path></svg>
+							</div>
+							<?php if (get_locale() == 'th') { 	echo "รูปภาพที่เกี่ยวข้อง"; } else { echo "Gallery"; } ?>
+						</h3>
+						<div class="wrap_yp_gallery">
+								<?php
+								$i = 0;
+								$count_gallery = count($gallery)-5;
+								foreach( $gallery as $galleries ):
+								$i++;
+								?>
+												<a data-fancybox="gallery" class="yp_gallery_item"  href="<?php echo esc_url($galleries['url']); ?>">
+													<div class="item-thumbs">
+														<div class="overlay_thumb_single">
+																<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+														</div>
+
+														<?php if ($i == 5): ?>
+															<div class="overlay_thumb">
+																<div class="in-overlay">
+																	<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+																	<span>+<?php echo $count_gallery; ?></span>
+																</div>
+															</div>
+														<?php endif; ?>
+
+														<img src="<?php echo esc_url($galleries['sizes']['large']); ?>" alt="<?php echo esc_url($galleries['name']); ?>">
+													</div>
+												</a>
+								<?php endforeach; ?>
+						</div>
+					</div>
+					 <?php endif; ?>
+
+					<?php
+					$pdf_post = get_field('pdf_post');
+					if( $pdf_post ):
+					$url_pdf = $pdf_post['url'];
+					?>
+					<style media="screen">
+						.box-show_pdf{
+							margin-top: 15px;
+						}
+					</style>
+					<div class="box-show_pdf">
+							<?php echo do_shortcode( "[pdf-embedder toolbarfixed='on' toolbar='top' url='$url_pdf']" );?>
+					</div>
+					<?php endif; ?>

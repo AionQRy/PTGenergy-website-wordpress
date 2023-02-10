@@ -1,0 +1,91 @@
+{
+    "key": "group_5e69ca423a499",
+    "title": "จัดการไฟล์ดาวน์โหลด",
+    "fields": [
+        {
+            "key": "field_5e69ca58efd38",
+            "label": "ไฟล์ดาวน์โหลด",
+            "name": "files_download",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "เพิ่มไฟล์",
+            "sub_fields": [
+                {
+                    "key": "field_5e69cb6db0154",
+                    "label": "ชื่อไฟล์",
+                    "name": "file_name",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "ดาวน์โหลดไฟล์",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5e69ca83efd39",
+                    "label": "ไฟล์แนบ",
+                    "name": "file_download",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": 10,
+                    "mime_types": "png,jpg,gif,jpeg,pdf,xls,xlsx,doc,docx,ppt,pptx,txt"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "mec-events"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1661164037
+}

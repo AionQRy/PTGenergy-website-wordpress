@@ -1,0 +1,63 @@
+{
+    "key": "group_6304994a5fbaa",
+    "title": "Auto Delete Attachment Settings",
+    "fields": [
+        {
+            "key": "field_6304994efbffd",
+            "label": "เปิด\/ปิด",
+            "name": "vc_enable_setting",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "เปิด",
+            "ui_off_text": "ปิด"
+        },
+        {
+            "key": "field_6304998d044b7",
+            "label": "จำนวนวัน (ถ้า Content เก่ากว่าวันที่กำหนดจะถูกลบ)",
+            "name": "num_days",
+            "type": "text",
+            "instructions": "เช่น Content และไฟล์ ที่เก่าว่า 30 วันจะโดนลบทั้งหมด\r\n*** ต้องระวังในการใช้งาน ***",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-auto-delete-attachment"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1661353480
+}

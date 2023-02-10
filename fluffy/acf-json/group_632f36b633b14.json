@@ -1,0 +1,402 @@
+{
+    "key": "group_632f36b633b14",
+    "title": "Requrest Data",
+    "fields": [
+        {
+            "key": "field_632f36c946d38",
+            "label": "หมวดหมู่",
+            "name": "reCat",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "cat_01": "PT News weekly \"ก้าวทัน กระแสโลกชาวพีที\"",
+                "cat_02": "โปรตี ดีลเด็ต \"โปรไหนเด็ด เราพร้อมเสิร์ฟ\"",
+                "cat_03": "PT welfare \"สวัสดิการดีๆ เพื่อเพื่อนๆ ชาวพีที",
+                "cat_04": "กิจกรรม PT จิตอาสา และกิจกรรมเพื่อสังคม",
+                "cat_05": "PT Internal Communication \"อัพเตทข่าวและกิจกรรมทั่วไป\"",
+                "cat_06": "กิจกรรมตามประเพณี และกิจกรรมที่เชื่อมโยงธุรกิจ",
+                "cat_07": "ด่วน"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "array",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_63308b414c320",
+            "label": "สถานะคำร้อง",
+            "name": "reStatus",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "status_01": "รอหัวหน้างานอนุมัติ",
+                "status_02": "หัวหน้างานส่งกลับให้แก้ไข",
+                "status_03": "รอหัวหน้างานอนุมัติคำร้องแก้ไข",
+                "status_04": "หัวหน้างานอนุมัติแล้ว",
+                "status_05": "ER ส่งงานให้ผู้ทำคำร้องตรวจสอบ",
+                "status_06": "ผู้ทำคำร้องส่งกลับให้ ER แก้ไข",
+                "status_07": "ผู้ทำคำร้องยืนยันเรียบร้อยแล้ว",
+                "status_08": "ประกาศแล้ว",
+                "status_09": "ไม่อนุมัติ"
+            },
+            "default_value": "status_01",
+            "return_format": "array",
+            "multiple": 0,
+            "allow_null": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_635ab823accd5",
+            "label": "สถานะคำร้อง (Extra)",
+            "name": "reStatus_extra",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_632f370d46d39",
+            "label": "เรื่อง",
+            "name": "reSubject",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_632f371946d3a",
+            "label": "วัตถุประสงค์",
+            "name": "reObj",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_632f373246d3b",
+            "label": "รายละเอียด",
+            "name": "reDetail",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_632f37b746d3d",
+            "label": "วันที่ต้องการประชาสัมพันธ์",
+            "name": "reDate_start",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_632f37c846d3e",
+            "label": "วันที่สิ้นสุด",
+            "name": "reDate_end",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_632f37a346d3c",
+            "label": "ช่องทางการสื่อสาร",
+            "name": "reChannel",
+            "aria-label": "",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Web": "Web",
+                "Email": "Email",
+                "Line": "Line",
+                "เสียงตามสาย": "เสียงตามสาย"
+            },
+            "allow_custom": 0,
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "array",
+            "save_custom": 0
+        },
+        {
+            "key": "field_632f382270494",
+            "label": "ไฟล์แนบ",
+            "name": "file_work",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "new_lines": "",
+            "maxlength": "",
+            "placeholder": "",
+            "rows": ""
+        },
+        {
+            "key": "field_632f383b70495",
+            "label": "กลุ่มเป้าหมายผู้รับ  (กรณีช่องทาง email)",
+            "name": "er_box",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_632f385670496",
+            "label": "UserID",
+            "name": "reuser_id",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_63308640cec81",
+            "label": "Manager Username",
+            "name": "manager_userid",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_633190c7501ce",
+            "label": "ความคิดเห็น",
+            "name": "comment_s1",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Add Row",
+            "sub_fields": [
+                {
+                    "key": "field_6331910e501cf",
+                    "label": "Comment Username",
+                    "name": "s1_uid",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_633190c7501ce"
+                },
+                {
+                    "key": "field_6331911b501d0",
+                    "label": "ความคิดเห็น",
+                    "name": "s1_comment",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "new_lines": "",
+                    "parent_repeater": "field_633190c7501ce"
+                },
+                {
+                    "key": "field_63319146eb504",
+                    "label": "วันที่แสดงความห็น",
+                    "name": "create_at",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "parent_repeater": "field_633190c7501ce"
+                }
+            ],
+            "rows_per_page": 20
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "vc_request_content"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1667882577
+}

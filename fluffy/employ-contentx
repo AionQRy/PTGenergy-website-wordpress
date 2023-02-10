@@ -1,0 +1,74 @@
+<div class="wrap-people">
+    <div class="item-employ">
+              <a href="#" class="link-all"></a>
+      <div class="profile">
+        <img src="<?php echo site_url(); ?>/wp-content/themes/fluffy/img/employ/em1.png" alt="employ-0000">
+      </div>
+      <div class="info">
+          <h4>นางสาว เจนนิเฟอร์ ลูน่า</h4>
+          <h5>ผู้จัดการ (แผนก IT)</h5>
+          <ul>
+            <li><strong>รหัสผนักงาน</strong> : U00001</li>
+            <li><strong>อีเมล</strong> : user@ptgenergy.co.th</li>
+            <li><strong>วันที่เริ่มงาน</strong> : 1 ก.ค 2564  อายุงาน : 1 ปี</li>
+            <li><strong>ฝ่าย</strong> : ดูและระบบ</li>
+          </ul>
+      </div>
+    </div>
+
+    <div class="item-employ">
+              <a href="#" class="link-all"></a>
+      <div class="profile">
+        <img src="<?php echo site_url(); ?>/wp-content/themes/fluffy/img/employ/em1.png" alt="employ-0000">
+      </div>
+      <div class="info">
+          <h4>นางสาว เจนนิเฟอร์ ลูน่า</h4>
+          <h5>ผู้จัดการ (แผนก IT)</h5>
+          <ul>
+            <li><strong>รหัสผนักงาน</strong> : U00001</li>
+            <li><strong>อีเมล</strong> : user@ptgenergy.co.th</li>
+            <li><strong>วันที่เริ่มงาน</strong> : 1 ก.ค 2564  อายุงาน : 1 ปี</li>
+            <li><strong>ฝ่าย</strong> : ดูและระบบ</li>
+          </ul>
+      </div>
+    </div>
+
+
+    <div class="item-employ">
+              <a href="#" class="link-all"></a>
+      <div class="profile">
+        <img src="<?php echo site_url(); ?>/wp-content/themes/fluffy/img/employ/em1.png" alt="employ-0000">
+      </div>
+      <div class="info">
+          <h4>นางสาว เจนนิเฟอร์ ลูน่า</h4>
+          <h5>ผู้จัดการ (แผนก IT)</h5>
+          <ul>
+            <li><strong>รหัสผนักงาน</strong> : U00001</li>
+            <li><strong>อีเมล</strong> : user@ptgenergy.co.th</li>
+            <li><strong>วันที่เริ่มงาน</strong> : 1 ก.ค 2564  อายุงาน : 1 ปี</li>
+            <li><strong>ฝ่าย</strong> : ดูและระบบ</li>
+          </ul>
+      </div>
+    </div>
+
+    <div class="item-employ">
+      <a href="#" class="link-all"></a>
+      <div class="profile">
+        <img src="<?php echo site_url(); ?>/wp-content/themes/fluffy/img/employ/em1.png" alt="employ-0000">
+      </div>
+      <div class="info">
+          <h4>นางสาว เจนนิเฟอร์ ลูน่า</h4>
+          <h5>ผู้จัดการ (แผนก IT)</h5>
+          <ul>
+            <li><strong>รหัสผนักงาน</strong> : U00001</li>
+            <li><strong>อีเมล</strong> : user@ptgenergy.co.th</li>
+            <li><strong>วันที่เริ่มงาน</strong> : 1 ก.ค 2564  อายุงาน : 1 ปี</li>
+            <li><strong>ฝ่าย</strong> : ดูและระบบ</li>
+          </ul>
+      </div>
+    </div>
+</div>
+
+<div class="vc_load_more">
+  <button type="button" id="btn_more">โหลดเพิ่มเติม</button>
+</div>

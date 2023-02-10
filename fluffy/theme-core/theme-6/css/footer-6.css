@@ -1,0 +1,458 @@
+.footer-yp .main-footer .main-object-f {
+    display: grid;
+    grid-template-columns: 3.5fr 1.5fr 1.5fr 1.5fr 1.5fr 0fr;
+    padding: 50px 0;
+}
+.footer-address{
+  display: flex;
+}
+.object-grid.object-1.footer-address {
+    padding-right: 50px;
+    grid-gap: 20px;
+}
+.footer-yp .main-footer .main-object-f .object-grid .detail h5 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.bottom-footer {
+    padding: 14px;
+    color: #FFF;
+    position: relative;
+    display: block;
+    background: #00aa4d;
+}
+#page .footer-yp {
+    border-top: solid 2px #1FB4B2;
+    position: relative;
+    background: #1FB4B2;
+}
+#page .footer-yp *, #page .footer-menu li:before {
+    color: #FFF!important;
+}
+.footer-yp .social-box .icon-in {
+    background: #fff;
+}
+#page .bottom-footer{
+background: #1FB4B2;
+}
+
+.footer-yp .wrap-address {
+    display: flex;
+    grid-gap: 20px;
+}
+.footer-address svg {
+    min-width: 20px;
+    min-height: 20px;
+}
+.footer-address svg path {
+    fill: #FFF;
+}
+.bottom-footer p {
+    font-size: 14px;
+    text-align: center;
+}
+ul.detail-text li {
+    font-size: 21px;
+    color: #fff;
+    list-style: none;
+}
+ul.detail-text {
+    margin: 0;
+    padding-left: 2.5em;
+}
+ul.detail-text li a {
+    padding-left: 10px;
+    color: #fff;
+    text-decoration: auto;
+    font-family: 'TH Sarabun New'!important;
+    font-size: 21px!important;
+}
+h3.title-h {
+    color: #00ab4e;
+    font-size: 29px;
+    margin: 0;
+    padding-bottom: 15px;
+    line-height: 1;
+}
+
+ul.social-ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+ul.social-ul li {
+    list-style: none;
+    padding-right: 6px;
+}
+ul.social-ul li svg {fill: #fff;stroke: #001d3d;}
+ul.social-ul li a {
+    padding: 5px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-list {
+    display: flex;
+    align-items: center;
+}
+.social-list h4 {
+    color: #fff;
+    font-size: 21px;
+    margin: 0;
+    padding-right: 10px;
+}
+ul.social-ul li:last-child {
+    padding: 0;
+}
+.contact-f h3 {
+    color: #fff;
+    font-size: 29px;
+    margin: 0;
+}
+.contact-f h4 {
+    margin: 0;
+    font-size: 21px;
+    color: #fff;
+    margin-bottom: -12px;
+}
+.footer-yp .main-footer .main-object-f .object-grid:first-child img{
+  max-width: 70px;
+}
+.footer-yp .main-footer .main-object-f .object-grid:first-child {
+    padding-left: 0;
+}
+.footer-yp .main-footer .main-object-f .object-grid:last-child {
+    padding-right: 0;
+    border: 0;
+}
+footer ul {
+    padding: 0;
+    margin: 0;
+}
+footer ul {
+    list-style: none;
+}
+.detail .footer-menu li {
+    list-style: none;
+    line-height: 1.25;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 3px;
+}
+.detail .footer-menu li:before {
+    content: '\f061';
+    display: block;
+    position: absolute;
+    left: -23px;
+    top: 0px;
+    width: 5px;
+    height: 5px;
+    color: #00ab4e;
+    font-family: 'Line Awesome Free';
+    font-size: 15px;
+    font-weight: 900;
+}
+.detail .footer-menu ul {
+    padding-left: 22px;
+}
+.detail .footer-menu ul li a {
+    transition: all ease-in-out 350ms;
+    color: #616161;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: unset;
+    line-height: 14px;
+}
+.bottom-footer .main-object-f ul.menu a{
+      transition: all ease-in-out 350ms;
+}
+.detail .footer-menu ul li a:hover,.bottom-footer .main-object-f ul.menu a:hover {
+    color: #00ab4e;
+}
+.bottom-footer .main-object-f {
+    display: block;
+}
+.top-object_bottom {
+    margin-bottom: 35px;
+}
+nav#roadmap-footer {
+    text-align: right;
+    float: right;
+}
+.bottom-footer .main-object-f ul.menu {
+    display: flex;
+    align-items: center;
+}
+.bottom-footer .main-object-f ul.menu a {
+    color: #fff;
+    text-decoration: unset;
+    font-size: 21px!important;
+    font-family: 'TH Sarabun New'!important;
+}
+.bottom-footer .main-object-f ul.menu li {
+    padding-right: 20px;
+}
+.bottom-footer .main-object-f ul.menu li:last-child {
+    padding: 0;
+}
+.footer-yp .top-footer {
+    padding-top: 11.5em;
+    position: relative;
+}
+.footer-yp .top-footer img {
+    position: absolute;
+    left: 50%;
+    bottom: -66px;
+    transform: translateX(-50%);
+}
+.top-footer {
+    background-image: url(/wp-content/uploads/2021/12/t2.png);
+    background-position: 100% -87px;
+    background-repeat: no-repeat;
+    background-size: 420px;
+}
+ul.detail-text {
+    padding: 0;
+}
+.bottom-footer .main-object-f h4 {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1;
+}
+.bottom-footer .main-object-f h3 {
+    font-size: 50px;
+    font-weight: 600;
+    color: #009f83;
+    line-height: 1.3;
+    text-align: center;
+}
+a.btn.btn-send.btn-subscribe {
+    background: #009f83;
+    color: #fff;
+    font-size: 24px;
+    text-decoration: unset;
+    font-weight: 600;
+    padding: 15px 20px 15px;
+    position: absolute;
+    top: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    line-height: 1;
+}
+.top-object_bottom .image img {
+    max-width: 190px;
+}
+.top-object_bottom .image {
+    text-align: center;
+}
+.top-object_bottom h3{
+    margin: 0;
+    color: #00ab4e;
+    line-height: 30px;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.top-object_bottom h4 {
+    color: #fff;
+    text-align: center;
+    font-size: 21px;
+    margin: 0;
+    line-height: 1;
+    font-family: 'TH Sarabun New'!important;
+}
+.top-object_bottom ul.detail-text {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 18px 0;
+    border-top: 1px solid rgb(255 255 255 / 27%);
+    border-bottom: 1px solid rgb(255 255 255 / 27%);
+    align-items: center;
+}
+.top-object_bottom ul.detail-text li {
+    line-height: 1;
+    font-family: 'TH Sarabun New';
+    font-size: 21px!important;
+}
+footer ul.detail-text li:first-child {
+    color: #fff;
+    /* font-size: 21px; */
+}
+h4.head-class  {
+    padding: 1em 0 0;
+}
+
+.footer-yp .main-footer .main-object-f .object-grid .detail {
+    color: #222;
+    padding-right: 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.footer-yp .main-footer .main-object-f .object-grid:first-child a{
+      color: #00ab4e;
+      text-decoration: none;
+}
+
+.footer-yp .main-footer .main-object-f .object-grid .detail .widget {
+    margin-bottom: 0;
+}
+.footer-contact {
+    display: flex;
+    gap: 10px;
+    margin-top: 2px;
+    flex-wrap: wrap;
+}
+.footer-menu .widget-title {
+    color: #0D0B18;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.wrap-my-profile {
+    display: none;
+}
+/*destop medium*/
+@media (max-width: 1600px){
+}
+/*laptop*/
+@media (max-width: 1280px){
+}
+/*ipad pro (large tablet)*/
+@media (max-width: 1024px) and (min-width: 992px){
+    .footer-yp .main-footer .main-object-f {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1em;
+    }
+    .footer-yp .main-footer .main-object-f .object-grid {
+        padding: 0;
+        border: 0;
+    }
+    .bottom-footer .main-object-f {
+        flex-direction: column-reverse;
+        align-items: center;
+        grid-template-columns: 1fr 3fr;
+    }
+    .footer-yp .top-footer img {
+        width: 240px;
+        bottom: -46px;
+    }
+    .footer-yp .top-footer {
+        padding-top: 8.5em;
+    }
+    .top-footer {
+        background-size: 300px;
+        background-position: 122% -60px;
+    }
+    a.btn.btn-send.btn-subscribe {
+        font-size: 21px;
+    }
+    a.btn.btn-send.btn-subscribe {
+        font-size: 21px;
+        right: 40px;
+    }
+    .bottom-footer .main-object-f ul.menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 20px;
+    }
+    .bottom-footer .main-object-f {
+        grid-template-columns: 1fr;
+        padding-top: 25px;
+    }
+    .bottom-footer .main-object-f h3 {
+        text-align: left;
+    }
+    .footer-yp .main-footer .main-object-f {
+        padding: 1em 0;
+    }
+}
+/*ipad (tablet)*/
+@media (max-width: 991.98px) {
+    .footer-yp .main-footer .main-object-f {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1em;
+        padding: 2em 0;
+    }
+    .footer-yp .main-footer .main-object-f .object-grid {
+        padding: 0;
+        border: 0;
+    }
+    .bottom-footer .main-object-f {
+        flex-direction: column-reverse;
+        align-items: center;
+        grid-template-columns: 1fr 3fr;
+    }
+    .footer-yp .top-footer img {
+        width: 240px;
+        bottom: -46px;
+    }
+    .footer-yp .top-footer {
+        padding-top: 8.5em;
+    }
+    .top-footer {
+        background-size: 300px;
+        background-position: 122% -60px;
+    }
+    a.btn.btn-send.btn-subscribe {
+        font-size: 21px;
+    }
+    a.btn.btn-send.btn-subscribe {
+        font-size: 21px;
+        right: 40px;
+    }
+    .bottom-footer .main-object-f ul.menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 20px;
+    }
+    .bottom-footer .main-object-f {
+        grid-template-columns: 1fr;
+        padding-top: 0;
+    }
+    .bottom-footer .main-object-f h3 {
+        text-align: left;
+    }
+    .footer-yp .main-footer .main-object-f {
+        padding: 1em 0;
+    }
+}
+/*iphone8 (smartphone)*/
+@media (max-width: 575.98px) {
+    .footer-yp .main-footer .main-object-f {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    h3.title-h {
+        font-size: 25px;
+    }
+    ul.detail-text {
+        padding: 0;
+    }
+    .object-grid.object-1 .image img {
+        max-width: 200px;
+    }
+    .object-grid.object-1 .image {
+        text-align: center;
+    }
+    .bottom-footer .main-object-f ul.menu {
+        flex-direction: column;
+    }
+    .top-footer {
+        background-image: unset;
+    }
+    .footer-yp .main-footer .main-object-f .object-grid.object-1 {
+        grid-column: span 1;
+    }
+    .top-object_bottom ul.detail-text {
+        flex-direction: column;
+    }
+}
+/*iphone5 (small smartphone)*/
+@media (max-width: 360px) {
+}

@@ -1,0 +1,65 @@
+{
+    "key": "group_6346960690df1",
+    "title": "ตั้งค่า",
+    "fields": [
+        {
+            "key": "field_635a6868862be",
+            "label": "ข่าวสำคัญ",
+            "name": "yp_featured_posts_nn",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "เปิด",
+            "ui_off_text": "ปิด",
+            "ui": 1
+        },
+        {
+            "key": "field_636cea8070cea",
+            "label": "บทความนี้แยกบริษัท",
+            "name": "yp_split_company",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "เปิด",
+            "ui_off_text": "ปิด",
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1674188637
+}

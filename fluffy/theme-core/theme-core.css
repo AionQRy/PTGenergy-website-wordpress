@@ -1,0 +1,345 @@
+.ll-skin-melon .ui-widget {
+    padding: 16px;
+    background: #f7f7f7;
+    z-index: 10!important;
+}
+header .social-list h4 {
+    font-size: 18px;
+}
+.ui-datepicker-title span {
+    font-size: 19px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.ll-skin-melon .ui-datepicker th {
+    color: #222;
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+.ui-datepicker .ui-datepicker-calendar td a, .ui-datepicker-calendar th {
+    font-size: 18px;
+    font-weight: 400;
+    background: #0000;
+    width: 40px;
+    height: 40px;
+    line-height: 37px;
+}
+
+.ll-skin-melon .ui-datepicker td {
+    padding: 3px 2px;
+}
+/* .search-page li.sf-field-category label:before {
+    content: "";
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 25px;
+    height: 25px;
+    background: white;
+    border: 1px solid #dddddd;
+} */
+
+.search-page li.sf-field-category input {
+    position: absolute;
+    opacity: 0;
+}
+.search-page li.sf-field-category label {
+    font-size: 21px;
+    color: #7c7c7c;
+    font-weight: 500;
+}
+
+/* li.sf-field-category input:checked + label:after {
+    position: absolute;
+    left: 1px;
+    top: -5px;
+    content: "";
+    color: #0090d6;
+    font-size: 20px;
+    font-weight: 900;
+    background: red;
+    height: 20px;
+    width: 20px;
+} */
+.searchandfilter h4 {
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 1;
+    padding: 1em 0 5px;
+    color: #000;
+}
+
+.ui-datepicker.ui-widget .ui-datepicker-next, .ui-datepicker.ui-widget .ui-datepicker-prev {
+    border-radius: 50px!important;
+}
+.archive-box.search-page li.sf-field-category > ul {
+    padding: 10px 0 15px;
+}
+.ui-datepicker.ui-widget td a.ui-state-active, .ui-datepicker.ui-widget td a:hover {
+    background: #00ab4e;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.archive-box.search-page li.sf-field-category li label {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+.archive-box.search-page .searchandfilter ul {
+    padding: 0;
+}
+
+.site-branding.white {
+    display: none !important;
+}
+.site-branding.white.active {
+    display: block !important;
+    margin: 0;
+}
+.site-branding.active {
+    display: none;
+}
+
+
+
+
+body.vSize-2 h1, body.vSize-2 h2, body.vSize-2 h3:not(.wrap-thumb-header *), body.vSize-2 h4, body.vSize-2 h5, body.vSize-2 h6, body.vSize-2 h1 span,
+body.vSize-2 h2 span, body.vSize-2 h3 span, body.vSize-2 h4 span, body.vSize-2 h5 span, body.vSize-2 h6 span {
+    font-size: 122.9% !important;
+}
+body.vSize-3 h1, body.vSize-3 h2, body.vSize-3 h3:not(.wrap-thumb-header *), body.vSize-3 h4, body.vSize-3 h5, body.vSize-3 h6, body.vSize-3 h1 span, body.vSize-3 h2 span,
+body.vSize-3 h3 span, body.vSize-3 h4 span, body.vSize-3 h5 span, body.vSize-3 h6 span {
+    font-size: 156.20000000000002% !important;
+}
+
+
+body.vSize-2, body.vSize-2 textarea, body.vSize-2 legend, body.vSize-2 code, body.vSize-2 pre, body.vSize-2 dd, body.vSize-2 dt, body.vSize-2 span:not(.searchandfilter ul li *,#breadcrumbs *),
+body.vSize-2 blockquote,
+body.vSize-2 .card-post_m h4 a {
+    font-size: 130% !important;
+}
+body.vSize-3, body.vSize-3 textarea, body.vSize-3 legend, body.vSize-3 code,
+body.vSize-3 pre, body.vSize-3 dd, body.vSize-3 dt, body.vSize-3 span:not(.searchandfilter ul li *,#breadcrumbs *), body.vSize-3 blockquote,
+body.vSize-3 .card-post_m h4 a
+ {
+    font-size: 140% !important;
+}
+
+body.vc-color_3 *:not(.df-container *),
+body.vc-color_3 #page div:before,
+body.vc-color_3 #page a,
+body.vc-color_3 #page li:before,
+body.vc-color_3 #page label:after
+{
+    background: #000!important;
+    color: #ff0!important;
+}
+
+
+body.vc-color_3 #page .hamburger-inner,
+body.vc-color_3 #page .hamburger-inner::before,
+body.vc-color_3 #page .hamburger-inner::after {
+    background-color: #ff0!important;
+}
+
+body.vc-color_3 #page .main-object .object-2 .toggle-search svg {
+    fill: #0000!important;
+}
+body.vc-color_3 #page #toggle-main-menu.hamburger {
+    padding-top: 10px;
+}
+
+
+body.vc-color_3 .df-ui-wrapper.df-ui-controls,body.vc-color_3 .df-ui-wrapper.df-ui-controls * {
+      background: #000!important;
+}
+body.vc-color_3 a, body.vc-color_3 *:not(.button-color) a, body.vc-color_3 b, body.vc-color_3 *:not(.button-color) b, body.vc-color_3 blockquote, body.vc-color_3 *:not(.button-color) blockquote, body.vc-color_3 button, body.vc-color_3 *:not(.button-color) button, body.vc-color_3 canvas, body.vc-color_3 *:not(.button-color) canvas, body.vc-color_3 caption, body.vc-color_3 *:not(.button-color) caption, body.vc-color_3 center, body.vc-color_3 *:not(.button-color) center, body.vc-color_3 cite, body.vc-color_3 *:not(.button-color) cite, body.vc-color_3 code, body.vc-color_3 *:not(.button-color) code, body.vc-color_3 col, body.vc-color_3 *:not(.button-color) col, body.vc-color_3 colgroup, body.vc-color_3 *:not(.button-color) colgroup, body.vc-color_3 dd, body.vc-color_3 *:not(.button-color) dd, body.vc-color_3 details, body.vc-color_3 *:not(.button-color) details, body.vc-color_3 dfn, body.vc-color_3 *:not(.button-color) dfn, body.vc-color_3 dir, body.vc-color_3 *:not(.button-color) dir, body.vc-color_3 div, body.vc-color_3 *:not(.button-color) div, body.vc-color_3 dl, body.vc-color_3 *:not(.button-color) dl, body.vc-color_3 dt, body.vc-color_3 *:not(.button-color) dt, body.vc-color_3 em, body.vc-color_3 *:not(.button-color) em, body.vc-color_3 embed, body.vc-color_3 *:not(.button-color) embed, body.vc-color_3 fieldset, body.vc-color_3 *:not(.button-color) fieldset, body.vc-color_3 figcaption, body.vc-color_3 *:not(.button-color) figcaption, body.vc-color_3 figure, body.vc-color_3 *:not(.button-color) figure, body.vc-color_3 font, body.vc-color_3 *:not(.button-color) font, body.vc-color_3 footer, body.vc-color_3 *:not(.button-color) footer, body.vc-color_3 form, body.vc-color_3 *:not(.button-color) form, body.vc-color_3 header, body.vc-color_3 *:not(.button-color) header, body.vc-color_3 i, body.vc-color_3 *:not(.button-color) i, body.vc-color_3 iframe, body.vc-color_3 *:not(.button-color) iframe, body.vc-color_3 img, body.vc-color_3 *:not(.button-color) img, body.vc-color_3 input, body.vc-color_3 *:not(.button-color) input, body.vc-color_3 kbd, body.vc-color_3 *:not(.button-color) kbd, body.vc-color_3 label, body.vc-color_3 *:not(.button-color) label, body.vc-color_3 legend, body.vc-color_3 *:not(.button-color) legend, body.vc-color_3 li, body.vc-color_3 *:not(.button-color) li, body.vc-color_3 mark, body.vc-color_3 *:not(.button-color) mark, body.vc-color_3 menu, body.vc-color_3 *:not(.button-color) menu, body.vc-color_3 meter, body.vc-color_3 *:not(.button-color) meter, body.vc-color_3 nav, body.vc-color_3 *:not(.button-color) nav, body.vc-color_3 nobr, body.vc-color_3 *:not(.button-color) nobr, body.vc-color_3 object, body.vc-color_3 *:not(.button-color) object, body.vc-color_3 ol, body.vc-color_3 *:not(.button-color) ol, body.vc-color_3 option, body.vc-color_3 *:not(.button-color) option, body.vc-color_3 pre, body.vc-color_3 *:not(.button-color) pre, body.vc-color_3 progress, body.vc-color_3 *:not(.button-color) progress, body.vc-color_3 q, body.vc-color_3 *:not(.button-color) q, body.vc-color_3 s, body.vc-color_3 *:not(.button-color) s, body.vc-color_3 section, body.vc-color_3 *:not(.button-color) section, body.vc-color_3 select, body.vc-color_3 *:not(.button-color) select, body.vc-color_3 small, body.vc-color_3 *:not(.button-color) small, body.vc-color_3 span, body.vc-color_3 *:not(.button-color) span, body.vc-color_3 strike, body.vc-color_3 *:not(.button-color) strike, body.vc-color_3 strong, body.vc-color_3 *:not(.button-color) strong, body.vc-color_3 sub, body.vc-color_3 *:not(.button-color) sub, body.vc-color_3 summary, body.vc-color_3 *:not(.button-color) summary, body.vc-color_3 sup, body.vc-color_3 *:not(.button-color) sup, body.vc-color_3 table, body.vc-color_3 *:not(.button-color) table, body.vc-color_3 td, body.vc-color_3 *:not(.button-color) td, body.vc-color_3 textarea, body.vc-color_3 *:not(.button-color) textarea, body.vc-color_3 th, body.vc-color_3 *:not(.button-color) th, body.vc-color_3 time, body.vc-color_3 *:not(.button-color) time, body.vc-color_3 tr, body.vc-color_3 *:not(.button-color) tr, body.vc-color_3 tt, body.vc-color_3 *:not(.button-color) tt, body.vc-color_3 u, body.vc-color_3 *:not(.button-color) u, body.vc-color_3 ul, body.vc-color_3 *:not(.button-color) ul, body.vc-color_3 var, body.vc-color_3 *:not(.button-color) var, body.vc-color_3 a span, body.vc-color_3 *:not(.button-color) a span, body.vc-color_3 strong, body.vc-color_3 *:not(.button-color) strong {
+    color: #ff0 !important;
+}
+
+body.vc-color_3 svg:not(.entry-meta svg,.btn-search_h svg,.swiper-button-next svg,.swiper-button-prev svg,.wrap-toggle-mobile svg,.post-info svg,.single-meta svg,.file-btn svg)
+{
+    fill: #ff0!important;
+    color: #ff0!important;
+    border-color: #ff0!important;
+}
+body.vc-color_3 input,
+body.vc-color_3 select,
+body.vc-color_3 button.btn-search_h,
+body.vc-color_3 input:focus {
+  border-color: #ff0!important
+}
+body.vc-color_3 .menu-item-has-children svg{
+  color: #ff0!important;
+  border-color: #ff0!important;
+  stroke: #ff0!important;
+}
+body.vc-color_3 #page a:hover,
+body.vc-color_3 #main-header_4 a:hover
+{
+    color: #ff0!important;
+}
+body.vc-color_3 #main-header_4 .bottom-object,
+body.vc-color_3 .searchandfilter label,
+body.vc-color_3 .v-post-loop.-list article,
+body.vc-color_3 .card-recent_post,
+body.vc-color_3 .card-post_m .title-head_card,
+body.vc-color_3 .select2-container,
+body.vc-color_3 .searchandfilter ul li label:after,
+body.vc-color_3 .left-tags.style-2,
+body.vc-color_3 button,
+body.vc-color_3 .sidebar_banner,
+body.vc-color_3 #page .vcps-item
+{
+    border-color: #ff0!important;
+}
+body.vc-color_3 .card-recent_post svg{
+    stroke: #ff0!important;
+}
+body.vc-color_3 .searchandfilter ul li label:after{
+  border: solid 1px;
+}
+body.vc-color_3 li.sf-field-search label:after {
+    border: 0!important;
+}
+body.vc-color_3 .heateor_sss_sharing_ul a svg path {
+    fill: #ff0!important;
+}
+
+/*vSize-2*/
+.vSize-2 .h-title_archive h3 {
+    font-size: 53px !important;
+}
+.vSize-2 .h-title_archive h3 {
+    font-size: 53px !important;
+}
+.vSize-2 input.sf-input-text::placeholder {
+    font-size: 28px;
+}
+
+
+.vSize-2 select.sf-input-select {
+    font-size: 28px;
+}
+
+.vSize-2 .desktop_menu li a {
+    font-size: 26px;
+}
+
+.vSize-3 .desktop_menu li a {
+    font-size: 30px;
+}
+
+
+.vSize-2 .search-h_box input.input-s_box,
+.vSize-2 .search-h_box input.input-s_box::placeholder,
+.vSize-2 .search-h_box button.btn-search_h:hover,
+.vSize-2 .search-h_box button.btn-search_h {
+    font-size: 24px;
+}
+
+/*destop medium*/
+@media (max-width: 1500px){
+}
+/*laptop*/
+@media (max-width: 1280px){
+}
+/*ipad pro (large tablet)*/
+@media (max-width: 1024px) and (min-width: 992px){
+
+}
+/*ipad (tablet)*/
+@media (max-width: 991.98px) {
+    .archive-box.search-page li.sf-field-category > ul {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+    }
+
+.archive-box.search-page .searchandfilter ul li {
+    width: 100%;
+    padding: 0;
+}
+
+.archive-box.search-page .searchandfilter ul li ul.sf_date_field {
+    display: flex !important;
+    width: 100%;
+}
+
+  .archive-box.search-page li.sf-field-category li {
+      width: 100%;
+  }
+  .archive-box.search-page .searchandfilter ul li h4 {
+    margin-top: 6px;
+  }
+}
+/*iphone8 (smartphone)*/
+@media (max-width: 575.98px) {
+    .archive-box.search-page li.sf-field-category li {
+        width: 100%;
+    }
+
+    .archive-box.search-page li.sf-field-category li label {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .archive-box.search-page .searchandfilter ul {
+        padding: 0;
+    }
+
+    .archive-box.search-page .searchandfilter ul li ul.sf_date_field {
+        display: block !important;
+    }
+
+    .archive-box.search-page .searchandfilter ul li {
+        width: 100%;
+        padding-top: 6px !important;
+    }
+
+
+
+    .archive-box.search-page .searchandfilter ul li.sf-field-sort_order {
+        padding-top: 12px !important;
+    }
+
+    .search-page .page-sub-title h3 {
+        font-size: 27px;
+        padding-top: 10px;
+    }
+
+    .search-page .page-sub-title h2 {
+        font-size: 33px;
+    }
+
+    .search-page .searchandfilter h4 {
+        font-size: 22px;
+    }
+    .archive-box.search-page li.sf-field-category > ul {
+        display: block !important;
+    }
+
+    .archive-box.search-page li.sf-field-post_date h4 {
+        width: 100%;
+        padding: 10px 0;
+    }
+    .archive-box.search-page li.sf-field-post_date {
+        flex-direction: column;
+    }
+
+    .color-box .box-color .button-color span {
+        width: 24px !important;
+        height: 24px !important;
+    }
+    .search-bar_yp.search-bottom-per li.sf-field-posts_per_page label:after, .box-pageination_post .searchandfilter label:after {
+        top: 44px!important;
+    }
+    .wrap-thumb-header .in-thumb .entry-title, .wrap-thumb-header .in-thumb .byline {
+        z-index: 10 !important;
+    }
+}
+/*iphone5 (small smartphone)*/
+@media (max-width: 360px) {
+}

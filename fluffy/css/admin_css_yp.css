@@ -1,0 +1,178 @@
+body.post-type-wpdmpro #plupload-upload-ui,
+body.post-type-wpdmpro #wpdm-attached-dir,
+body.post-type-wpdmpro #wpdm-additional-previews,
+body.post-type-wpdmpro #wpdm-activate-shop-info,
+body.post-type-wpdmpro #wpseo_meta,
+.plugin-update-tr .notice-error,
+#nsl-notices-fallback,
+body.post-type-wpdmpro #wp-content-wrap,
+body.post-type-wpdmpro #post-status-info,
+body.post-type-wpdmpro .w3eden .nav-tabs > li:last-child,
+body.post-type-wpdmpro .w3eden .nav-tabs > li:nth-child(2),
+/* body.post-type-wpdmpro #edit-slug-box, */
+#rsssl-message,
+body.post-type-wpdmpro #perfmatters,
+body.post-type-wpdmpro .w3eden .panel,
+body.post-type-wpdmpro #link_label_row,
+body.post-type-wpdmpro #cache_zip_row,
+body.post-type-wpdmpro #individual_file_download_row,
+body.post-type-wpdmpro #template_row,
+body.post-type-wpdmpro #page_template_row,
+body.post-type-banner_bottom .acf-field-61a75d5ff5003,
+#wpbody div[data-manager-id="simple-sitemap"],
+#wpbody .notice.e-notice.e-notice--dismissible.e-notice--extended,
+.ocdi-install-plugins-content-content .plugin-item,
+.updated.um-admin-notice.notice.is-dismissible,
+div#filebird-empty-folder-notice,
+div#yoast-first-time-configuration-notice,
+.postman-not-configured-notice.notice.notice-error.is-dismissible,
+.updated.success.fs-notice.fs-sticky.fs-has-title.fs-slug-post-smtp.fs-type-plugin,
+div#updraft-dashnotice,
+.notice.disable__comment__alert,
+#heateor_sss_gdpr_notification
+{
+  display: none!important;
+}
+li#toplevel_page_mec-intro li.wp-first-item {
+    display: none;
+}
+li#wp-admin-bar-wp-logo {
+    display: none!important;
+}
+body.post-type-poll .wps-field.select ,body.post-type-poll .wps-field.media,
+body.post-type-poll .wps-field.wp_editor,
+body.post-type-poll .wps-field.datepicker,
+body.post-type-poll .wps-field.image_select,
+body.post-type-poll #wpseo_meta,
+.error.error_notice_ff_fluentform_pro_license,
+.error.fade
+{
+    display: none!important;
+}
+.acf-field.acf-field-repeater.acf-field-61a85991cbc60 img {
+    max-width: 70px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+/* .error {
+	display: none;
+} */
+
+
+body.toplevel_page_theme-general-settings ul.acf-radio-list {
+    margin: 0 -10px;
+}
+body.toplevel_page_theme-general-settings ul.acf-radio-list li {
+    display: inline-block;
+    width: calc(33.33% - 20px);
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 44px;
+    font-weight: 600;
+}
+body.toplevel_page_theme-general-settings ul.acf-radio-list li label {
+    display: block;
+    border: solid 2px #ddd;
+}
+body.toplevel_page_theme-general-settings ul.acf-radio-list li label.selected{
+    border: solid 2px #01977e;
+}
+body.toplevel_page_theme-general-settings ul.acf-radio-list li label::before{
+  width: 100%;
+  height: 390px;
+  background-size: cover!important;
+  display: block;
+  content: '';
+  background-position: top center!important;
+}
+body.toplevel_page_theme-general-settings ul.acf-radio-list li input {
+    display: none;
+}
+body.toplevel_page_theme-general-settings ul.acf-radio-list li:nth-child(1) label:before {
+    background: url(/wp-content/themes/fluffy/img/theme/01-min.jpg);
+}
+
+body.toplevel_page_theme-general-settings ul.acf-radio-list li:nth-child(2) label:before {
+    background: url(/wp-content/themes/fluffy/img/theme/02-min.jpg);
+}
+
+body.toplevel_page_theme-general-settings ul.acf-radio-list li:nth-child(3) label:before {
+    background: url(/wp-content/themes/fluffy/img/theme/03-min.jpg);
+}
+
+body.toplevel_page_theme-general-settings ul.acf-radio-list li:nth-child(4) label:before {
+    background: url(/wp-content/themes/fluffy/img/theme/04-min.jpg);
+}
+
+body.toplevel_page_theme-general-settings ul.acf-radio-list li:nth-child(5) label:before {
+    background: url(/wp-content/themes/fluffy/img/theme/05-min.jpg);
+}
+
+body.toplevel_page_theme-general-settings ul.acf-radio-list li:nth-child(6) label:before {
+    background: url(/wp-content/themes/fluffy/img/theme/06-min.jpg);
+}
+
+body.ptg-theme-settings_page_acf-options-send-news-to-email .ui-datepicker.ui-widget td a {
+    background: #0000!important;
+    border: 0!important;
+    text-align: center;
+}
+
+body.ptg-theme-settings_page_acf-options-send-news-to-email .ui-datepicker.ui-widget td.ui-datepicker-today a{
+    border: 1px solid #3875d7 !important;
+    background: #3875d7 !important;
+    font-weight: normal !important;
+    color: #fff !important;
+}
+body.ptg-theme-settings_page_acf-options-send-news-to-email .acf-ui-datepicker .ui-state-highlight.ui-state-active,
+body.ptg-theme-settings_page_acf-options-send-news-to-email .ui-datepicker.ui-widget td.ui-datepicker-current-day a,
+body.ptg-theme-settings_page_acf-options-send-news-to-email .ui-datepicker.ui-widget td:hover a{
+    border: 1px solid #e91e63 !important;
+    background: #e91e63 !important;
+    font-weight: normal !important;
+    color: #fff !important;
+}
+
+
+
+body.ptg-theme-settings_page_acf-options-send-news-to-email .acf-ui-datepicker .ui-widget-header .ui-icon{
+    display: none;
+}
+
+body.ptg-theme-settings_page_acf-options-send-news-to-email .acf-ui-datepicker .ui-state-hover,
+body.ptg-theme-settings_page_acf-options-send-news-to-email .acf-ui-datepicker .ui-widget-content .ui-state-hover,
+body.ptg-theme-settings_page_acf-options-send-news-to-email .acf-ui-datepicker .ui-widget-header .ui-state-hover,
+body.ptg-theme-settings_page_acf-options-send-news-to-email .acf-ui-datepicker .ui-state-focus,
+body.ptg-theme-settings_page_acf-options-send-news-to-email .acf-ui-datepicker .ui-widget-content .ui-state-focus,
+body.ptg-theme-settings_page_acf-options-send-news-to-email .acf-ui-datepicker .ui-widget-header .ui-state-focus {
+    border: 1px solid #98b7e8!important;
+    background: #98b7e8!important;
+    font-weight: normal!important;
+    color: #fff!important;
+}
+
+
+body.ptg-theme-settings_page_acf-options-send-news-to-email dd.ui_tpicker_second {
+    display: none!important;
+}
+/* body.toplevel_page_theme-general-settings ul.acf-radio-list li:nth-child(7) label:before {
+    background: url(/wp-content/themes/fluffy/img/theme/07-min.jpg);
+}
+
+body.toplevel_page_theme-general-settings ul.acf-radio-list li:nth-child(8) label:before {
+    background: url(/wp-content/themes/fluffy/img/theme/08-min.jpg);
+} */
+/*
+body.toplevel_page_theme-general-settings ul.acf-radio-list li:nth-child(9) label:before {
+    background: url(/wp-content/themes/fluffy/img/theme/09-min.jpg);
+}
+
+body.toplevel_page_theme-general-settings ul.acf-radio-list li:nth-child(10) label:before {
+    background: url(/wp-content/themes/fluffy/img/theme/10-min.jpg);
+}
+
+body.toplevel_page_theme-general-settings ul.acf-radio-list li:nth-child(11) label:before {
+    background: url(/wp-content/themes/fluffy/img/theme/11-min.jpg);
+} */

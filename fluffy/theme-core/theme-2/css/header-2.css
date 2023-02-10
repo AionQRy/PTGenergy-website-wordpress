@@ -1,0 +1,385 @@
+/*header*/
+.main-object.fixed {
+    position: fixed;
+    width: 100%;
+    background: #FFF;
+    top: 0;
+    box-shadow: 0 3px 5px 1px rgb(0 0 0 / 8%);
+    animation: fadeInDown .9s;
+    z-index: 9999;
+}
+.main-object{
+    box-shadow: 0 3px 5px 1px rgb(0 0 0 / 8%);
+}
+body.admin-bar .main-object.fixed {
+    top: 32px;
+}
+ #menu-topbar {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+      grid-gap: 15px;
+}
+.main-object .left {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    background: #FFF;
+}
+.desktop_menu li a:not(.sub-menu a) {
+    padding: 15px 20px 10px;
+}
+.main-header .top-object {
+background: linear-gradient(90.03deg, #FBB034 0%, #FF8855 100%);
+    padding: 7px 0;
+}
+.desktop_menu li a {
+    font-size: 16px;
+}
+
+.wrap-nav {
+    display: flex;
+    justify-content: space-between;
+}
+.site-branding img {
+    max-height: 85px;
+}
+.my-profile {
+    color: #ff8854;
+    display: flex;
+    background: #fff5df;
+    font-size: 14px;
+    align-items: center;
+    padding: 5px 16px;
+    border-radius: 50px;
+    max-height: 37px;
+    height: 37px;
+    grid-gap: 5px;
+}
+.my-profile svg {
+    height: 17px;
+    width: 17px;
+    stroke: #ff8854;
+}
+.my-profile svg path {
+    fill: #ff8955;
+}
+.my-profile:active,.my-profile:focus{
+    color: #fff;
+}
+#page .my-profile:hover svg{
+    stroke: #222;
+}
+#page .my-profile:hover svg path {
+    fill: #222;
+}
+
+#page .my-profile:hover{
+  background: #eee!important;
+  color: #000;
+}
+.wrap-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrap-nav .right {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.popup_search .search-h_box button.btn-search_h {
+    background: #fb5a40;
+    border-color: #fb5a40;
+}
+.toggle-search .toggle-icon {
+    background: #f85;
+    height: 43px;
+    width: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+.toggle-search .toggle-icon:hover {
+    background: #fbaf35;
+    color: #fff;
+    height: 45px;
+    width: 45px;
+}
+.social-box {
+    display: flex;
+    grid-gap: 5px;
+}
+
+.social-box *{
+      fill: #4B4B4B;
+}
+.social-box .icon-in {
+    background: #FFF;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-box svg {
+    max-width: 15px;
+    max-height: 15px;
+}
+
+
+.top-bar a {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 300;
+}
+#menu-topbar li {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.desktop_menu ul.menu > li.current-menu-item a {
+    color: #000;
+}
+
+.desktop_menu ul.menu > li.current-menu-item a:hover {
+    color: #00AB4E;
+}
+.mobile-object .main-object {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+.mobile-object .main-object .main-tog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 32px;
+}
+.mobile-object .main-object span.span-toggle {
+    font-size: 14px;
+}
+
+.mobile-object .toggle-search .toggle-icon {
+    height: 45px;
+    width: 45px;
+    color: #222;
+    background: #0000;
+}
+
+.mobile-object .toggle-icon svg{
+      width: 30px;
+}
+/*
+.desktop_menu ul.menu > li.current-menu-item a:before {
+    content: '';
+    width: 35px;
+    height: 4px;
+    background: #00ab4e;
+    position: absolute;
+    bottom: 0;
+} */
+
+.menu-item-svg {
+    display: block;
+}
+
+.menu-item-svg svg {
+  height: 35px;
+  width: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+.desktop_menu ul > li a {
+    flex-direction: column-reverse;
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+li#menu-item-453 .menu-item-svg svg {
+    width: 45px;
+    height: 45px;
+    margin-bottom: -6px;
+    margin-top: -4px;
+}
+#mobile-menu li .menu-item-svg {
+    display: none;
+}
+.menu-item-has-children .wrap-toggle-mobile svg:not(.sub-menu .wrap-toggle-mobile svg) {
+    width: 15px;
+    height: 15px;
+    margin-left: -17px;
+    margin-right: 10px;
+    margin-bottom: -20px;
+}
+.desktop_menu ul {
+    grid-gap: 20px;
+}
+
+.wrap-topbar .right.new {
+    display: flex;
+    align-items: center;
+    grid-gap: 15px;
+    position: relative;
+}
+
+.wrap-nav .right:after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 1000%;
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: -1000%;
+    z-index: 1;
+    background: #fdf1d6;
+}
+.wrap-nav .right {
+    background: #fdf1d6;
+    display: flex;
+    min-width: 100px;
+    justify-content: center;
+}
+.toggle-search {
+    flex-direction: column;
+    grid-gap: 3px;
+}
+.toggle-search span {
+    color: #000;
+    font-size: 14px;
+}
+
+.desktop_menu {
+    display: flex;
+    border-top-right-radius: 25px;
+    width: 100%;
+    justify-content: center;
+    background: #FFF;
+}
+.wrap-my-profile.desktop_menu {
+    background: #0000;
+}
+#page .my_profile_menu a {
+    flex-direction: column;
+}
+#page .my-profile{
+  background: #FFF;
+}
+.main-header .main-object{
+      background: #fdf1d6;
+}
+.main-object .left:before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 1000%;
+    position: absolute;
+    top: 0;
+    left: -1000%;
+    right: auto;
+    z-index: 1;
+    background: #fff;
+}
+.mobile-object .main-object{
+    background: #FFF;
+}
+
+.desktop_menu ul.menu > li.current-menu-item a .menu-item-svg,
+.desktop_menu ul.menu > li.current-menu-ancestor a .menu-item-svg {
+    background: #f85;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin-top: -7px;
+    padding: 10px;
+}
+.desktop_menu ul.menu > li.current-menu-item a .menu-item-svg svg,
+.desktop_menu ul.menu > li.current-menu-item a .menu-item-svg svg path,
+.desktop_menu ul.menu > li.current-menu-ancestor a .menu-item-svg svg,
+.desktop_menu ul.menu > li.current-menu-ancestor a .menu-item-svg svg path
+{
+      fill:#FFF;
+    stroke: #FFF!important;
+}
+#page .current-menu-ancestor .menu-item-svg svg[data-type="media"],
+#page .current-menu-ancestor .menu-item-svg svg[data-type="media"] path,
+#page .current-menu-ancestor .menu-item-svg svg[data-type="announce"],
+#page .current-menu-ancestor .menu-item-svg svg[data-type="announce"] path
+{
+    fill: #0000!important;
+}
+#page .current-menu-ancestor .menu-item-svg svg[data-type="rule"]{
+  stroke: #0000!important;
+  fill: #FFF!important;
+}
+.yp-row.applist-wrap .wrap-in .ob1 h4, .yp-row.applist-wrap .wrap-in .ob1 h3 {
+    display: none;
+}
+.applist-wrap .wrap-in .ob1 {
+    max-width: 100%;
+    flex-direction: unset;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+#page .applist-wrap .wrap-in .ob1 .button-theme-3 a {
+    background: #fb5a40;
+    color: #FFF;
+    padding: 8px 14px;
+    border-radius: 50px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+#page .item-quick-links {
+    padding: 1px;
+}
+#page .applist-wrap .wrap-in .ob2 {
+    max-width: 100%;
+}
+#page .applist-wrap .wrap-in {
+    display: flex;
+    gap: 0;
+    justify-content: center;
+    padding-left: 0;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+.desktop_menu li:hover > a, .site-header .menu-item-has-children:hover > .wrap-toggle-mobile svg, .site-header .menu-item-has-children:hover > a, .current_page_item > a {
+    color: #fb5a40;
+}
+.mec-fluent-wrap i.mec-filter-icon.active {
+    background-color: #0000;
+}
+@media (max-width: 1600px){
+}
+/*laptop*/
+@media (max-width: 1280px){
+}
+/*ipad pro (large tablet)*/
+@media (max-width: 1024px) and (min-width: 992px){
+}
+@media (max-width: 991.98px) {
+
+}
+/*iphone8 (smartphone)*/
+@media (max-width: 575.98px) {
+
+}
+/*iphone5 (small smartphone)*/
+@media (max-width: 360px) {
+}

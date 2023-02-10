@@ -1,0 +1,44 @@
+{
+    "key": "group_6339a4bb90861",
+    "title": "Favorite News Setting",
+    "fields": [
+        {
+            "key": "field_6339a4ba72e35",
+            "label": "เปิดการใช้งาน",
+            "name": "favorite_news_enable",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "เปิด",
+            "ui_off_text": "ปิด",
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-favorite-news"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1664722195
+}
